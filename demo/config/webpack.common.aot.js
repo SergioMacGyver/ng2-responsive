@@ -5,12 +5,13 @@ let webpack = require('webpack'),
 
 module.exports = {
   entry: {
-    'polyfills': './src/polyfills.ts',
-    'vendor': './src/vendor.ts',
-    'app': './src/bootstrap.ts'
+    'app':'./src/bootstrap.aot.ts',
   },
-
   resolve: {
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'src')
+    ],
     extensions: ['', '.js', '.ts', '.json', '.css', '.scss', '.html']
   },
 
@@ -18,7 +19,10 @@ module.exports = {
     loaders: [
       {
         test: /\.ts$/,
-        loaders: ['ts', 'angular2-template-loader']
+        loaders: [
+          'awesome-typescript?tsconfig=tsconfig.json',
+          'angular2-template'
+        ]
       },
       {
         test: /\.html$/,
