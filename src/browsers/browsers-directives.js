@@ -45,10 +45,9 @@ var IsChrome = (function (_super) {
         core_1.Directive({
             selector: '[isChrome]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsChrome);
     return IsChrome;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsChrome = IsChrome;
 /*======== FIREFOX =========*/
@@ -75,10 +74,9 @@ var IsFirefox = (function (_super) {
         core_1.Directive({
             selector: '[isFirefox]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsFirefox);
     return IsFirefox;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsFirefox = IsFirefox;
 /*======== SAFARI =========*/
@@ -105,10 +103,9 @@ var IsSafari = (function (_super) {
         core_1.Directive({
             selector: '[isSafari]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsSafari);
     return IsSafari;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsSafari = IsSafari;
 /*======== OPERA =========*/
@@ -135,10 +132,9 @@ var IsOpera = (function (_super) {
         core_1.Directive({
             selector: '[isOpera]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsOpera);
     return IsOpera;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsOpera = IsOpera;
 /*======== IE =========*/
@@ -165,10 +161,9 @@ var IsIE = (function (_super) {
         core_1.Directive({
             selector: '[isIE]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsIE);
     return IsIE;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsIE = IsIE;
 var ShowItBrowser = (function (_super) {
@@ -193,10 +188,9 @@ var ShowItBrowser = (function (_super) {
         core_1.Directive({
             selector: '[showItBrowser]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], ShowItBrowser);
     return ShowItBrowser;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.ShowItBrowser = ShowItBrowser;
 var HideItBrowser = (function (_super) {
@@ -222,10 +216,9 @@ var HideItBrowser = (function (_super) {
             selector: '[hideItBrowser]',
             providers: [config_1.ResponsiveState]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], HideItBrowser);
     return HideItBrowser;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.HideItBrowser = HideItBrowser;
 /*
@@ -256,10 +249,9 @@ var IsIE9 = (function (_super) {
         core_1.Directive({
             selector: '[isIE9]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsIE9);
     return IsIE9;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsIE9 = IsIE9;
 var IsIE10 = (function (_super) {
@@ -285,10 +277,9 @@ var IsIE10 = (function (_super) {
         core_1.Directive({
             selector: '[isIE10]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsIE10);
     return IsIE10;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsIE10 = IsIE10;
 var IsIE11 = (function (_super) {
@@ -314,10 +305,9 @@ var IsIE11 = (function (_super) {
         core_1.Directive({
             selector: '[isIE11]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsIE11);
     return IsIE11;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsIE11 = IsIE11;
 var IsIE12 = (function (_super) {
@@ -343,10 +333,9 @@ var IsIE12 = (function (_super) {
         core_1.Directive({
             selector: '[isIE12]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsIE12);
     return IsIE12;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsIE12 = IsIE12;
 var ShowIEVersion = (function (_super) {
@@ -371,10 +360,9 @@ var ShowIEVersion = (function (_super) {
         core_1.Directive({
             selector: '[showIEVersion]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], ShowIEVersion);
     return ShowIEVersion;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.ShowIEVersion = ShowIEVersion;
 var HideIEVersion = (function (_super) {
@@ -399,10 +387,9 @@ var HideIEVersion = (function (_super) {
         core_1.Directive({
             selector: '[hideIEVersion]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], HideIEVersion);
     return HideIEVersion;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.HideIEVersion = HideIEVersion;
 /*======== BrowserInfo =========*/
@@ -447,10 +434,9 @@ var BrowserInfo = (function () {
         core_1.Directive({
             selector: "browserInfo", inputs: ['browserInfo'], outputs: ['browser']
         }), 
-        __metadata('design:paramtypes', [config_1.ResponsiveState, (typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [config_1.ResponsiveState, core_1.ViewContainerRef])
     ], BrowserInfo);
     return BrowserInfo;
-    var _a;
 }());
 exports.BrowserInfo = BrowserInfo;
 /*======== ieInfo =========*/
@@ -495,10 +481,9 @@ var IeInfo = (function () {
         core_1.Directive({
             selector: "ieInfo", inputs: ['ieInfo'], outputs: ['ieVersion']
         }), 
-        __metadata('design:paramtypes', [config_1.ResponsiveState, (typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [config_1.ResponsiveState, core_1.ViewContainerRef])
     ], IeInfo);
     return IeInfo;
-    var _a;
 }());
 exports.IeInfo = IeInfo;
 //# sourceMappingURL=browsers-directives.js.map

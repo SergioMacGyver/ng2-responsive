@@ -373,16 +373,15 @@ var Responsive = (function () {
     ], Responsive.prototype, "responsive", null);
     __decorate([
         core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+        __metadata('design:type', core_1.EventEmitter)
     ], Responsive.prototype, "changes", void 0);
     Responsive = __decorate([
         core_1.Directive({
             selector: '[responsive]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _b) || Object, config_1.ResponsiveState, (typeof (_c = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _c) || Object])
+        __metadata('design:paramtypes', [core_1.TemplateRef, config_1.ResponsiveState, core_1.ViewContainerRef])
     ], Responsive);
     return Responsive;
-    var _a, _b, _c;
 }());
 exports.Responsive = Responsive;
 //# sourceMappingURL=responsive.js.map

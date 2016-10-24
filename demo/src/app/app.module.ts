@@ -6,17 +6,6 @@ import { AppComponent } from './app.component';
 //REMOVE
 import { ResponsiveModule, ResponsiveConfig, ResponsiveConfigInterface } from './responsive';
 
-let config: ResponsiveConfigInterface = {
-    breakPoints: {
-            xs: {max: 600},
-            sm: {min: 601, max: 959},
-            md: {min: 960, max: 1279},
-            lg: {min: 1280, max: 1919},
-            xl: {min: 1920}
-    },
-    debounceTime: 100 // allow to debounce checking timer
-};
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -26,9 +15,7 @@ let config: ResponsiveConfigInterface = {
   declarations: [
     AppComponent
   ],
-  providers:[
-    {provide: ResponsiveConfig, useFactory: () => new ResponsiveConfig(config) }
-    ],
+  providers:[],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

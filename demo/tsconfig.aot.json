@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
     "declaration": false,
@@ -11,29 +11,22 @@
     "pretty": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
     "noImplicitUseStrict": false,
     "noFallthroughCasesInSwitch": true,
-    "typeRoots": [
-      "./node_modules"
-    ],
-    "types": [
-      "node"
-    ]
+    "outDir": "./public/compiled-aot"
   },
-  "compileOnSave": false,
-  "files": [
-    "src/app/app.module.ts",
-    "src/main.aot.ts"
+  "types": [
+    "es6-shim",
+    "node"
   ],
-  "angularCompilerOptions": {
-    "debug": true,
-    "genDir": "aot",
-    "skipMetadataEmit" : true
-  },
   "exclude": [
     "node_modules",
     "public"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit": true
+  }
 }

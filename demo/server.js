@@ -15,7 +15,6 @@ var passport = require("passport");
 var compression = require("compression");
 var imagemagick = require("imagemagick");
 var multer = require("multer");
-var underscore = require("underscore");
 var cors = require("cors");
 var jwt = require('jsonwebtoken');
 var expressJwt = require('express-jwt');
@@ -25,7 +24,7 @@ var jwtSecret = 'fdfs897fsd213/mfñda3dd';
 var port = 3000;
 var app = express();
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/public/aot/favicon.ico'));
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
@@ -38,10 +37,10 @@ mongoose.connect("mongodb://localhost/dbpau",function(error){
     console.log("No se puede conectar con mongodb en localhost");
 });
 
-app.use("/assets", express.static(__dirname + "/public/assets"));
-app.use("/app", express.static(__dirname + "/public/app"));
+app.use("/jit", express.static(__dirname + "/public/aot"));
+app.use("/aot", express.static(__dirname + "/public/jit"));
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/aot'));
 
 app.use("*",function(req,res,next){
     res.header("Cache-Control","private,no-cache,no-store,must-revalidate");
@@ -51,7 +50,7 @@ app.use("*",function(req,res,next){
 });
 
 app.use('/*', function(req, res){
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/public/aot/index.aot.html');
 });
 
 app.listen(port);

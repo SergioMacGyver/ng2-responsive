@@ -9,9 +9,9 @@
  *
  * Dependencies:
  * @angular/core : "2.0.0"
- * rxjs: "5.0.0-beta.13"
+ * rxjs: "5.0.0-beta.12"
  *
- * @more_info https://kalypso.agency
+ * @more_info http://kalypso.agency
  *            https://github.com/ManuCutillas
  *            https://www.npmjs.com/~manucutillas
  *            https://github.com/no-more
@@ -51,11 +51,11 @@ var ResponsiveModule = (function () {
             declarations: [responsive_1.Responsive, bootstrap_directives_1.XL, bootstrap_directives_1.LG, bootstrap_directives_1.MD, bootstrap_directives_1.SM, bootstrap_directives_1.XS, bootstrap_directives_1.ShowItBootstrap, bootstrap_directives_1.HideItBootstrap, devices_directives_1.IsSmartTv, devices_directives_1.IsDesktop, devices_directives_1.IsTablet, devices_directives_1.IsMobile, devices_directives_1.ShowItDevice, devices_directives_1.HideItDevice, devices_directives_1.IsIphone, devices_directives_1.IsIpad,
                 devices_directives_1.IsAndroidMobile, devices_directives_1.IsAndroidTablet, devices_directives_1.IsWindowsPhone, devices_directives_1.ShowItStandard, devices_directives_1.HideItStandard, devices_directives_1.IsPortrait, devices_directives_1.IsLandscape, custom_sizes_directives_1.ShowItSizes, custom_sizes_directives_1.HideItSizes,
                 pixelratio_directives_1.Is1xPixel, pixelratio_directives_1.IsRetina, pixelratio_directives_1.Is4k, pixelratio_directives_1.PixelRatioInfo, browsers_directives_1.IsChrome, browsers_directives_1.IsFirefox, browsers_directives_1.IsSafari, browsers_directives_1.IsOpera, browsers_directives_1.IsIE, browsers_directives_1.IsIE9, browsers_directives_1.IsIE10, browsers_directives_1.IsIE11, browsers_directives_1.IsIE12, browsers_directives_1.IeInfo, browsers_directives_1.ShowItBrowser, browsers_directives_1.HideItBrowser, browsers_directives_1.ShowIEVersion, browsers_directives_1.HideIEVersion,
-                bootstrap_directives_1.ResponsiveSizeInfo, devices_directives_1.DeviceInfo, devices_directives_1.OrientationInfo, responsive_window_1.ResponsiveWindow, useragent_1.UserAgentInfo],
+                bootstrap_directives_1.ResponsiveSizeInfo, devices_directives_1.DeviceInfo, devices_directives_1.DeviceStandardInfo, browsers_directives_1.BrowserInfo, devices_directives_1.OrientationInfo, responsive_window_1.ResponsiveWindow, useragent_1.UserAgentInfo],
             exports: [responsive_1.Responsive, bootstrap_directives_1.XL, bootstrap_directives_1.LG, bootstrap_directives_1.MD, bootstrap_directives_1.SM, bootstrap_directives_1.XS, bootstrap_directives_1.ShowItBootstrap, bootstrap_directives_1.HideItBootstrap, devices_directives_1.IsSmartTv, devices_directives_1.IsDesktop, devices_directives_1.IsTablet, devices_directives_1.IsMobile, devices_directives_1.ShowItDevice, devices_directives_1.HideItDevice, devices_directives_1.IsIphone, devices_directives_1.IsIpad,
                 devices_directives_1.IsAndroidMobile, devices_directives_1.IsAndroidTablet, devices_directives_1.IsWindowsPhone, devices_directives_1.ShowItStandard, devices_directives_1.HideItStandard, devices_directives_1.IsPortrait, devices_directives_1.IsLandscape, custom_sizes_directives_1.ShowItSizes, custom_sizes_directives_1.HideItSizes,
                 pixelratio_directives_1.Is1xPixel, pixelratio_directives_1.IsRetina, pixelratio_directives_1.Is4k, pixelratio_directives_1.PixelRatioInfo, browsers_directives_1.IsChrome, browsers_directives_1.IsFirefox, browsers_directives_1.IsSafari, browsers_directives_1.IsOpera, browsers_directives_1.IsIE, browsers_directives_1.IsIE9, browsers_directives_1.IsIE10, browsers_directives_1.IsIE11, browsers_directives_1.IsIE12, browsers_directives_1.IeInfo, browsers_directives_1.ShowItBrowser, browsers_directives_1.HideItBrowser, browsers_directives_1.ShowIEVersion, browsers_directives_1.HideIEVersion,
-                bootstrap_directives_1.ResponsiveSizeInfo, devices_directives_1.DeviceInfo, devices_directives_1.OrientationInfo, responsive_window_1.ResponsiveWindow, useragent_1.UserAgentInfo],
+                bootstrap_directives_1.ResponsiveSizeInfo, devices_directives_1.DeviceInfo, devices_directives_1.DeviceStandardInfo, browsers_directives_1.BrowserInfo, devices_directives_1.OrientationInfo, responsive_window_1.ResponsiveWindow, useragent_1.UserAgentInfo],
             providers: [config_1.ResponsiveState]
         }), 
         __metadata('design:paramtypes', [])

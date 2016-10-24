@@ -141,4 +141,5 @@ export abstract class RESPONSIVE_BASE implements OnInit, OnDestroy {
 
         this.showHide( !!this._showWhenTrue ? showBoolean : !showBoolean );
     }
+
 }

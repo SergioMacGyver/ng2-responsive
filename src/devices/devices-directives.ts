@@ -309,7 +309,7 @@ export class IsLandscape extends RESPONSIVE_BASE{
 /*======== DeviceInfo =========*/
 /* DeviceInfo */
 @Directive({
-    selector: "deviceInfo", inputs:['deviceInfo'], outputs:['device']
+    selector: "deviceInfo"
 })
 export class DeviceInfo implements OnInit,OnDestroy {
     public currentstate: string;
@@ -319,8 +319,7 @@ export class DeviceInfo implements OnInit,OnDestroy {
     public set responsiveSizeInfo(grid_state: string[]|string) {
         this.updateData(this.currentstate);
     }
-    
-    public device:EventEmitter<any> = new EventEmitter();
+    @Output() device:EventEmitter<any> = new EventEmitter();
     constructor(private _responsiveState: ResponsiveState,
                 private viewContainer: ViewContainerRef) {}
 
@@ -401,7 +400,8 @@ export class DeviceStandardInfo implements OnInit,OnDestroy {
 
 /*======== OrientationInfo =========*/
 @Directive({
-    selector: "orientationInfo",inputs:['orientationInfo'], outputs:['orientation']
+    selector: "orientationInfo",
+    outputs:['orientation']
 })
 export class OrientationInfo implements OnInit,OnDestroy {
     public currentstate: string;

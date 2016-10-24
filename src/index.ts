@@ -9,9 +9,9 @@
  *
  * Dependencies:
  * @angular/core : "2.0.0"
- * rxjs: "5.0.0-beta.13"
+ * rxjs: "5.0.0-beta.12"
  *
- * @more_info https://kalypso.agency
+ * @more_info http://kalypso.agency
  *            https://github.com/ManuCutillas
  *            https://www.npmjs.com/~manucutillas
  *            https://github.com/no-more
@@ -43,11 +43,11 @@ export { ResponsiveState, ResponsiveConfig } from './config/config';
  declarations: [Responsive, XL, LG, MD, SM, XS, ShowItBootstrap, HideItBootstrap, IsSmartTv, IsDesktop, IsTablet, IsMobile, ShowItDevice, HideItDevice, IsIphone, IsIpad,
     IsAndroidMobile, IsAndroidTablet, IsWindowsPhone, ShowItStandard, HideItStandard, IsPortrait, IsLandscape, ShowItSizes, HideItSizes,
     Is1xPixel, IsRetina, Is4k, PixelRatioInfo, IsChrome, IsFirefox, IsSafari, IsOpera, IsIE, IsIE9, IsIE10, IsIE11, IsIE12, IeInfo, ShowItBrowser, HideItBrowser, ShowIEVersion, HideIEVersion,
-    ResponsiveSizeInfo, DeviceInfo, OrientationInfo, ResponsiveWindow, UserAgentInfo],
+    ResponsiveSizeInfo, DeviceInfo,DeviceStandardInfo,BrowserInfo, OrientationInfo, ResponsiveWindow, UserAgentInfo],
  exports: [Responsive, XL, LG, MD, SM, XS, ShowItBootstrap, HideItBootstrap, IsSmartTv, IsDesktop, IsTablet, IsMobile, ShowItDevice, HideItDevice, IsIphone, IsIpad,
     IsAndroidMobile, IsAndroidTablet, IsWindowsPhone, ShowItStandard, HideItStandard, IsPortrait, IsLandscape, ShowItSizes, HideItSizes,
     Is1xPixel, IsRetina, Is4k, PixelRatioInfo, IsChrome, IsFirefox, IsSafari, IsOpera, IsIE, IsIE9, IsIE10, IsIE11, IsIE12, IeInfo, ShowItBrowser, HideItBrowser, ShowIEVersion, HideIEVersion,
-    ResponsiveSizeInfo, DeviceInfo, OrientationInfo, ResponsiveWindow, UserAgentInfo],
+    ResponsiveSizeInfo, DeviceInfo,DeviceStandardInfo,BrowserInfo, OrientationInfo, ResponsiveWindow, UserAgentInfo],
   providers: [ResponsiveState]
 })
 export class ResponsiveModule { }   

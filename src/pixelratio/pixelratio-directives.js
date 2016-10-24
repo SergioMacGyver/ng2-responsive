@@ -44,10 +44,9 @@ var Is1xPixel = (function (_super) {
         core_1.Directive({
             selector: '[is1xPixel]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], Is1xPixel);
     return Is1xPixel;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.Is1xPixel = Is1xPixel;
 /*======== RETINA =========*/
@@ -74,10 +73,9 @@ var IsRetina = (function (_super) {
         core_1.Directive({
             selector: '[isRetina]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], IsRetina);
     return IsRetina;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.IsRetina = IsRetina;
 /*======== 4K =========*/
@@ -104,10 +102,9 @@ var Is4k = (function (_super) {
         core_1.Directive({
             selector: '[is4k]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], Is4k);
     return Is4k;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.Is4k = Is4k;
 //Next to refactor
@@ -152,17 +149,16 @@ var PixelRatioInfo = (function () {
     };
     __decorate([
         core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+        __metadata('design:type', core_1.EventEmitter)
     ], PixelRatioInfo.prototype, "pixelratio", void 0);
     PixelRatioInfo = __decorate([
         core_1.Directive({
             selector: "pixelratioInfo",
             inputs: ['pixelratioInfo']
         }), 
-        __metadata('design:paramtypes', [config_1.ResponsiveState, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [config_1.ResponsiveState, core_1.ViewContainerRef])
     ], PixelRatioInfo);
     return PixelRatioInfo;
-    var _a, _b;
 }());
 exports.PixelRatioInfo = PixelRatioInfo;
 //# sourceMappingURL=pixelratio-directives.js.map

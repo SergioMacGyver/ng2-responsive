@@ -40,10 +40,9 @@ var ShowItSizes = (function (_super) {
         core_1.Directive({
             selector: '[showItSizes]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], ShowItSizes);
     return ShowItSizes;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.ShowItSizes = ShowItSizes;
 /* hide */
@@ -69,10 +68,9 @@ var HideItSizes = (function (_super) {
         core_1.Directive({
             selector: '[hideItSizes]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], HideItSizes);
     return HideItSizes;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.HideItSizes = HideItSizes;
 //# sourceMappingURL=custom-sizes-directives.js.map

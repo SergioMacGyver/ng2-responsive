@@ -1,4 +1,7 @@
 import { platformBrowser } from '@angular/platform-browser';
-import { AppModuleNgFactory } from './app.ngfactory';
+import { AppModuleNgFactory } from '../aot/src/app/app.module.ngfactory';
+
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/do';
 
 platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);

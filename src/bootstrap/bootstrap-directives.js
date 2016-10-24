@@ -45,10 +45,9 @@ var XL = (function (_super) {
         core_1.Directive({
             selector: '[xl]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], XL);
     return XL;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.XL = XL;
 /*======== LG STATES =========*/
@@ -75,10 +74,9 @@ var LG = (function (_super) {
         core_1.Directive({
             selector: '[lg]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], LG);
     return LG;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.LG = LG;
 /*======== MD STATES =========*/
@@ -105,10 +103,9 @@ var MD = (function (_super) {
         core_1.Directive({
             selector: '[md]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], MD);
     return MD;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.MD = MD;
 /*======== SM STATES =========*/
@@ -135,10 +132,9 @@ var SM = (function (_super) {
         core_1.Directive({
             selector: '[sm]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], SM);
     return SM;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.SM = SM;
 /*======== XS STATES =========*/
@@ -165,10 +161,9 @@ var XS = (function (_super) {
         core_1.Directive({
             selector: '[xs]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], XS);
     return XS;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.XS = XS;
 /*======== MULTIPLE SIZES STATES =========*/
@@ -195,10 +190,9 @@ var ShowItBootstrap = (function (_super) {
         core_1.Directive({
             selector: '[showItBootstrap]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], ShowItBootstrap);
     return ShowItBootstrap;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.ShowItBootstrap = ShowItBootstrap;
 /* hide */
@@ -224,10 +218,9 @@ var HideItBootstrap = (function (_super) {
         core_1.Directive({
             selector: '[hideItBootstrap]'
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _b) || Object, config_1.ResponsiveState])
+        __metadata('design:paramtypes', [core_1.TemplateRef, core_1.ViewContainerRef, config_1.ResponsiveState])
     ], HideItBootstrap);
     return HideItBootstrap;
-    var _a, _b;
 }(responsive_base_1.RESPONSIVE_BASE));
 exports.HideItBootstrap = HideItBootstrap;
 /*======== responsiveSizeInfo =========*/
@@ -274,10 +267,9 @@ var ResponsiveSizeInfo = (function () {
             inputs: ['responsiveSizeInfo'],
             outputs: ['statechanges']
         }), 
-        __metadata('design:paramtypes', [config_1.ResponsiveState, (typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [config_1.ResponsiveState, core_1.ViewContainerRef])
     ], ResponsiveSizeInfo);
     return ResponsiveSizeInfo;
-    var _a;
 }());
 exports.ResponsiveSizeInfo = ResponsiveSizeInfo;
 //# sourceMappingURL=bootstrap-directives.js.map

@@ -1,22 +1,18 @@
 {
-  "compileOnSave": false,
-  "buildOnSave": false,
   "compilerOptions": {
+    "module": "commonjs",
     "target": "es5",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "removeComments": true,
+    "outDir": "public/compiled",
+    "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
+    "moduleResolution": "node",
     "types": [
-      "core-js",
+      "es6-shim",
       "node"
     ]
   },
-  "files": [],
   "exclude": [
-    "node_modules",
-    "public"
+    "node_modules"
   ]
 }

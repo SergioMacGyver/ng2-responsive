@@ -47,10 +47,9 @@ var ResponsiveWindow = (function () {
         core_1.Directive({
             selector: "[responsive-window]"
         }), 
-        __metadata('design:paramtypes', [config_1.ResponsiveState, (typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [config_1.ResponsiveState, core_1.ElementRef])
     ], ResponsiveWindow);
     return ResponsiveWindow;
-    var _a;
 }());
 exports.ResponsiveWindow = ResponsiveWindow;
 //# sourceMappingURL=responsive-window.js.map
