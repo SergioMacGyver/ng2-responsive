@@ -69,7 +69,8 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   __KeyValueDiffers_26:any;
   __SharedStylesHost_27:any;
   __Title_28:import17.Title;
-  __ResponsiveState_29:import18.ResponsiveState;
+  __ResponsiveConfig_29:any;
+  __ResponsiveState_30:import18.ResponsiveState;
   constructor(parent:import19.Injector) {
     super(parent,[import20.AppComponentNgFactory],[import20.AppComponentNgFactory]);
   }
@@ -158,9 +159,13 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((this.__Title_28 == (null as any))) { (this.__Title_28 = new import17.Title()); }
     return this.__Title_28;
   }
-  get _ResponsiveState_29():import18.ResponsiveState {
-    if ((this.__ResponsiveState_29 == (null as any))) { (this.__ResponsiveState_29 = new import18.ResponsiveState(this.parent.get(import18.ResponsiveConfig,(null as any)))); }
-    return this.__ResponsiveState_29;
+  get _ResponsiveConfig_29():any {
+    if ((this.__ResponsiveConfig_29 == (null as any))) { (this.__ResponsiveConfig_29 = import1.ResponsiveDefinition()); }
+    return this.__ResponsiveConfig_29;
+  }
+  get _ResponsiveState_30():import18.ResponsiveState {
+    if ((this.__ResponsiveState_30 == (null as any))) { (this.__ResponsiveState_30 = new import18.ResponsiveState(this._ResponsiveConfig_29)); }
+    return this.__ResponsiveState_30;
   }
   createInternal():import1.AppModule {
     this._CommonModule_0 = new import2.CommonModule();
@@ -204,7 +209,8 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import34.KeyValueDiffers)) { return this._KeyValueDiffers_26; }
     if ((token === import13.SharedStylesHost)) { return this._SharedStylesHost_27; }
     if ((token === import17.Title)) { return this._Title_28; }
-    if ((token === import18.ResponsiveState)) { return this._ResponsiveState_29; }
+    if ((token === import18.ResponsiveConfig)) { return this._ResponsiveConfig_29; }
+    if ((token === import18.ResponsiveState)) { return this._ResponsiveState_30; }
     return notFoundResult;
   }
   destroyInternal():void {

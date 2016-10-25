@@ -11,7 +11,7 @@
     "rollup": "node_modules/.bin/rollup -c rollup-config.js",
     "prod:server": "node server.js",
     "dev:server": "live-server  --mount=ROUTE:/public/aot --entry-file=/index.aot.html",
-    "start": "npm run dev:server",
+    "start": "npm run prod:server",
     "webpack:aot": "npm run ngc && webpack --config webpack-aot.js",
     "webpack:jit": "webpack --config webpack-jit.js",
     "build":"npm run webpack:jit && npm run webpack:aot && npm run ngc && npm run rollup",
