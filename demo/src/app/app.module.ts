@@ -2,12 +2,12 @@ import { NgModule,ModuleWithProviders } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
-//import {ResponsiveModule, ResponsiveConfig, ResponsiveConfigInterface} from 'ng2-responsive';
+import {ResponsiveModule, ResponsiveConfig} from 'ng2-responsive';
 //REMOVE
-import { ResponsiveModule, ResponsiveConfig, ResponsiveConfigInterface } from './responsive';
+//import { ResponsiveModule, ResponsiveConfig } from './ng2-responsive';
 
-export function ResponsiveDefinition(){ 
-   return new ResponsiveConfig({
+
+let config = {
     breakPoints: {
             xs: {max: 600},
             sm: {min: 601, max: 959},
@@ -16,8 +16,11 @@ export function ResponsiveDefinition(){
             xl: {min: 1920}
     },
     debounceTime: 100 // allow to debounce checking timer
-});
-}
+};
+
+export function ResponsiveDefinition(){ 
+   return new ResponsiveConfig(config);
+};
 
 @NgModule({
   imports: [
@@ -28,9 +31,7 @@ export function ResponsiveDefinition(){
   declarations: [
     AppComponent
   ],
-  providers:[{
-         provide: ResponsiveConfig, 
-         useFactory: ResponsiveDefinition }],
+  providers:[],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

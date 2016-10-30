@@ -37,8 +37,8 @@ mongoose.connect("mongodb://localhost/dbpau",function(error){
     console.log("No se puede conectar con mongodb en localhost");
 });
 
-app.use("/jit", express.static(__dirname + "/public/aot"));
-app.use("/aot", express.static(__dirname + "/public/jit"));
+app.use("/", express.static(__dirname + "/public/aot"));
+app.use("/jit", express.static(__dirname + "/public/jit"));
 
 app.use(express.static(__dirname + '/public/aot'));
 
