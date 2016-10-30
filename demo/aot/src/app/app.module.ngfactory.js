@@ -14,7 +14,7 @@ var import1 = require('../../../src/app/app.module');
 var import2 = require('@angular/common/src/common_module');
 var import3 = require('@angular/core/src/application_module');
 var import4 = require('@angular/platform-browser/src/browser');
-var import5 = require('../../../src/app/ng2-responsive/index');
+var import5 = require('ng2-responsive/index');
 var import6 = require('@angular/common/src/localization');
 var import7 = require('@angular/core/src/application_init');
 var import8 = require('@angular/core/src/testability/testability');
@@ -27,7 +27,7 @@ var import14 = require('@angular/platform-browser/src/dom/dom_renderer');
 var import15 = require('@angular/platform-browser/src/security/dom_sanitization_service');
 var import16 = require('@angular/core/src/linker/view_utils');
 var import17 = require('@angular/platform-browser/src/browser/title');
-var import18 = require('../../../src/app/ng2-responsive/config/config');
+var import18 = require('ng2-responsive/config/config');
 var import20 = require('./app.component.ngfactory');
 var import21 = require('@angular/core/src/application_tokens');
 var import22 = require('@angular/platform-browser/src/dom/events/dom_events');
@@ -51,7 +51,7 @@ var AppModuleInjector = (function (_super) {
     Object.defineProperty(AppModuleInjector.prototype, "_LOCALE_ID_5", {
         get: function () {
             if ((this.__LOCALE_ID_5 == null)) {
-                (this.__LOCALE_ID_5 = 'es-ES');
+                (this.__LOCALE_ID_5 = 'en-US');
             }
             return this.__LOCALE_ID_5;
         },

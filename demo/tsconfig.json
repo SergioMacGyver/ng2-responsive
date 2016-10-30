@@ -9,7 +9,6 @@
     "moduleResolution": "node",
     "declaration": true,
 		"noImplicitAny": false,
-		"declarationFiles": true,
     "types": [
       "es6-shim",
       "node"

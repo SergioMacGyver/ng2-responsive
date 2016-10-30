@@ -2,7 +2,7 @@ import { NgModule,ModuleWithProviders } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
-import {ResponsiveModule, ResponsiveConfig} from 'ng2-responsive';
+import { ResponsiveModule, ResponsiveConfig } from 'ng2-responsive';
 //REMOVE
 //import { ResponsiveModule, ResponsiveConfig } from './ng2-responsive';
 
@@ -31,7 +31,9 @@ export function ResponsiveDefinition(){
   declarations: [
     AppComponent
   ],
-  providers:[],
+  providers:[{
+         provide: ResponsiveConfig, 
+         useFactory: ResponsiveDefinition }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
