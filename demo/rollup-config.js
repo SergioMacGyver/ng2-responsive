@@ -13,8 +13,9 @@ export default {
       nodeResolve({jsnext: true, module: true}),
       commonjs({
         include: [
-          'node_modules/rxjs/**'
-          ],
+          'node_modules/rxjs/**',
+          'node_modules/ng2-responsive/**'
+          ]
       }),
       uglify()
   ]

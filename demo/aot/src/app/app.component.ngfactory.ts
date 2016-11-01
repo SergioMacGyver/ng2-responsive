@@ -37,11 +37,13 @@ export class Wrapper_AppComponent {
     this.changed = false;
     this.context = new import0.AppComponent();
   }
-  detectChangesInternal(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
+  detectChangesInInputProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
     var changed:any = this.changed;
     this.changed = false;
     if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
     return changed;
+  }
+  detectChangesInHostProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):void {
   }
 }
 var renderType_AppComponent_Host:import2.RenderComponentType = (null as any);
@@ -53,7 +55,7 @@ class _View_AppComponent_Host0 extends import1.AppView<any> {
     super(_View_AppComponent_Host0,renderType_AppComponent_Host,import6.ViewType.HOST,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
-    this._el_0 = this.selectOrCreateHostElement('my-app',rootSelector,(null as any));
+    this._el_0 = import4.selectOrCreateRenderHostElement(this.renderer,'my-app',import4.EMPTY_INLINE_ARRAY,rootSelector,(null as any));
     this._appEl_0 = new import3.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_AppComponent0(this.viewUtils,this.injector(0),this._appEl_0);
     this._AppComponent_0_4 = new Wrapper_AppComponent();
@@ -67,8 +69,9 @@ class _View_AppComponent_Host0 extends import1.AppView<any> {
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    this._AppComponent_0_4.detectChangesInternal(this,this._el_0,throwOnChange);
+    this._AppComponent_0_4.detectChangesInInputProps(this,this._el_0,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
+    this._AppComponent_0_4.detectChangesInHostProps(this,this._el_0,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
   }
 }
@@ -180,72 +183,87 @@ class _View_AppComponent0 extends import1.AppView<import0.AppComponent> {
   _text_78:any;
   _text_79:any;
   _text_80:any;
-  _arr_0:any;
-  _map_0:any;
-  _arr_1:any;
-  _map_1:any;
-  _map_2:any;
-  _map_3:any;
+  _arr_100:any;
+  _map_101:any;
+  _arr_102:any;
+  _map_103:any;
+  _map_104:any;
+  _map_105:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import3.AppElement) {
     super(_View_AppComponent0,renderType_AppComponent,import6.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
+    this._arr_100 = import4.pureProxy2((p0:any,p1:any):any[] => {
+      return [
+        p0,
+        p1
+      ]
+      ;
+    });
+    this._map_101 = import4.pureProxy1((p0:any):{[key: string]:any} => {
+      return {bootstrap: p0};
+    });
+    this._arr_102 = import4.pureProxy2((p0:any,p1:any):any[] => {
+      return [
+        p0,
+        p1
+      ]
+      ;
+    });
+    this._map_103 = import4.pureProxy1((p0:any):{[key: string]:any} => {
+      return {bootstrap: p0};
+    });
+    this._map_104 = import4.pureProxy3((p0:any,p1:any,p2:any):{[key: string]:any} => {
+      return {
+        window: p0,
+        min: p1,
+        max: p2
+      }
+      ;
+    });
+    this._map_105 = import4.pureProxy1((p0:any):{[key: string]:any} => {
+      return {sizes: p0};
+    });
   }
   createInternal(rootSelector:string):import3.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'main',(null as any));
+    this._el_0 = import4.createRenderElement(this.renderer,parentRenderNode,'main',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n',(null as any));
-    this._el_2 = this.renderer.createElement(this._el_0,'img',(null as any));
-    this.renderer.setElementAttribute(this._el_2,'class','background-image');
-    this.renderer.setElementAttribute(this._el_2,'src','../assets/images/background-responsive-directives.jpg');
+    this._el_2 = import4.createRenderElement(this.renderer,this._el_0,'img',new import4.InlineArray4(4,'class','background-image','src','../assets/images/background-responsive-directives.jpg'),(null as any));
     this._text_3 = this.renderer.createText(this._el_0,'\n',(null as any));
-    this._el_4 = this.renderer.createElement(this._el_0,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_4,'class','site-wrapper');
-    this.renderer.setElementAttribute(this._el_4,'style','min-height:700px;');
+    this._el_4 = import4.createRenderElement(this.renderer,this._el_0,'div',new import4.InlineArray4(4,'class','site-wrapper','style','min-height:700px;'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'\n\n  ',(null as any));
-    this._el_6 = this.renderer.createElement(this._el_4,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_6,'class','site-wrapper-inner');
+    this._el_6 = import4.createRenderElement(this.renderer,this._el_4,'div',new import4.InlineArray2(2,'class','site-wrapper-inner'),(null as any));
     this._text_7 = this.renderer.createText(this._el_6,'\n\n    ',(null as any));
-    this._el_8 = this.renderer.createElement(this._el_6,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_8,'class','cover-container');
+    this._el_8 = import4.createRenderElement(this.renderer,this._el_6,'div',new import4.InlineArray2(2,'class','cover-container'),(null as any));
     this._text_9 = this.renderer.createText(this._el_8,'\n\n      ',(null as any));
-    this._el_10 = this.renderer.createElement(this._el_8,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_10,'class','masthead clearfix');
+    this._el_10 = import4.createRenderElement(this.renderer,this._el_8,'div',new import4.InlineArray2(2,'class','masthead clearfix'),(null as any));
     this._text_11 = this.renderer.createText(this._el_10,'\n        ',(null as any));
-    this._el_12 = this.renderer.createElement(this._el_10,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_12,'class','inner');
+    this._el_12 = import4.createRenderElement(this.renderer,this._el_10,'div',new import4.InlineArray2(2,'class','inner'),(null as any));
     this._text_13 = this.renderer.createText(this._el_12,'\n          ',(null as any));
-    this._el_14 = this.renderer.createElement(this._el_12,'nav',(null as any));
+    this._el_14 = import4.createRenderElement(this.renderer,this._el_12,'nav',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_15 = this.renderer.createText(this._el_14,'\n            ',(null as any));
-    this._el_16 = this.renderer.createElement(this._el_14,'ul',(null as any));
-    this.renderer.setElementAttribute(this._el_16,'class','nav masthead-nav');
+    this._el_16 = import4.createRenderElement(this.renderer,this._el_14,'ul',new import4.InlineArray2(2,'class','nav masthead-nav'),(null as any));
     this._text_17 = this.renderer.createText(this._el_16,'\n              ',(null as any));
-    this._el_18 = this.renderer.createElement(this._el_16,'li',(null as any));
-    this._el_19 = this.renderer.createElement(this._el_18,'a',(null as any));
-    this.renderer.setElementAttribute(this._el_19,'href','https://github.com/ManuCutillas/responsive-directives-angular2');
+    this._el_18 = import4.createRenderElement(this.renderer,this._el_16,'li',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_19 = import4.createRenderElement(this.renderer,this._el_18,'a',new import4.InlineArray2(2,'href','https://github.com/ManuCutillas/responsive-directives-angular2'),(null as any));
     this._text_20 = this.renderer.createText(this._el_19,'Github',(null as any));
     this._text_21 = this.renderer.createText(this._el_16,'\n              ',(null as any));
-    this._el_22 = this.renderer.createElement(this._el_16,'li',(null as any));
-    this._el_23 = this.renderer.createElement(this._el_22,'a',(null as any));
-    this.renderer.setElementAttribute(this._el_23,'href','https://www.npmjs.com/package/responsive-directives-angular2');
+    this._el_22 = import4.createRenderElement(this.renderer,this._el_16,'li',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_23 = import4.createRenderElement(this.renderer,this._el_22,'a',new import4.InlineArray2(2,'href','https://www.npmjs.com/package/responsive-directives-angular2'),(null as any));
     this._text_24 = this.renderer.createText(this._el_23,'NPM',(null as any));
     this._text_25 = this.renderer.createText(this._el_16,'\n              ',(null as any));
-    this._el_26 = this.renderer.createElement(this._el_16,'li',(null as any));
-    this._el_27 = this.renderer.createElement(this._el_26,'a',(null as any));
-    this.renderer.setElementAttribute(this._el_27,'href','https://github.com/ManuCutillas/responsive-directives-angular2/issues');
+    this._el_26 = import4.createRenderElement(this.renderer,this._el_16,'li',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_27 = import4.createRenderElement(this.renderer,this._el_26,'a',new import4.InlineArray2(2,'href','https://github.com/ManuCutillas/responsive-directives-angular2/issues'),(null as any));
     this._text_28 = this.renderer.createText(this._el_27,'issues',(null as any));
     this._text_29 = this.renderer.createText(this._el_16,'\n            ',(null as any));
     this._text_30 = this.renderer.createText(this._el_14,'\n          ',(null as any));
     this._text_31 = this.renderer.createText(this._el_12,'\n        ',(null as any));
     this._text_32 = this.renderer.createText(this._el_10,'\n      ',(null as any));
     this._text_33 = this.renderer.createText(this._el_8,'\n\n      ',(null as any));
-    this._el_34 = this.renderer.createElement(this._el_8,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_34,'class','inner cover');
+    this._el_34 = import4.createRenderElement(this.renderer,this._el_8,'div',new import4.InlineArray2(2,'class','inner cover'),(null as any));
     this._text_35 = this.renderer.createText(this._el_34,'\n        ',(null as any));
-    this._el_36 = this.renderer.createElement(this._el_34,'img',(null as any));
-    this.renderer.setElementAttribute(this._el_36,'class','rd-logo');
-    this.renderer.setElementAttribute(this._el_36,'src','../assets/images/logo-responsive.png');
+    this._el_36 = import4.createRenderElement(this.renderer,this._el_34,'img',new import4.InlineArray4(4,'class','rd-logo','src','../assets/images/logo-responsive.png'),(null as any));
     this._text_37 = this.renderer.createText(this._el_34,'\n        ',(null as any));
-    this._el_38 = this.renderer.createElement(this._el_34,'p',(null as any));
-    this.renderer.setElementAttribute(this._el_38,'class','lead introduction');
+    this._el_38 = import4.createRenderElement(this.renderer,this._el_34,'p',new import4.InlineArray2(2,'class','lead introduction'),(null as any));
     this._text_39 = this.renderer.createText(this._el_38,'Superset of RESPONSIVE DIRECTIVES to show or hide items according to the size of the device screen and another features in Angular 2',(null as any));
     this._text_40 = this.renderer.createText(this._el_34,'\n      ',(null as any));
     this._text_41 = this.renderer.createText(this._el_8,'\n        ',(null as any));
@@ -260,8 +278,7 @@ class _View_AppComponent0 extends import1.AppView<import0.AppComponent> {
     this._Responsive_44_6 = new import11.Wrapper_Responsive(this._TemplateRef_44_5,this.parentInjector.get(import18.ResponsiveState),this._appEl_44.vcRef);
     this._text_45 = this.renderer.createText(this._el_8,'\n        ',(null as any));
     this._text_46 = this.renderer.createText(this._el_8,'\n        ',(null as any));
-    this._el_47 = this.renderer.createElement(this._el_8,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_47,'style','position:absolute; width:100%;');
+    this._el_47 = import4.createRenderElement(this.renderer,this._el_8,'div',new import4.InlineArray2(2,'style','position:absolute; width:100%;'),(null as any));
     this._ResponsiveWindow_47_3 = new import12.Wrapper_ResponsiveWindow(this.parentInjector.get(import18.ResponsiveState),new import19.ElementRef(this._el_47));
     this._text_48 = this.renderer.createText(this._el_47,'\n              ',(null as any));
     this._anchor_49 = this.renderer.createTemplateAnchor(this._el_47,(null as any));
@@ -270,80 +287,45 @@ class _View_AppComponent0 extends import1.AppView<import0.AppComponent> {
     this._Responsive_49_6 = new import11.Wrapper_Responsive(this._TemplateRef_49_5,this.parentInjector.get(import18.ResponsiveState),this._appEl_49.vcRef);
     this._text_50 = this.renderer.createText(this._el_47,'\n        ',(null as any));
     this._text_51 = this.renderer.createText(this._el_8,'\n\n      ',(null as any));
-    this._el_52 = this.renderer.createElement(this._el_8,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_52,'class','mastfoot');
+    this._el_52 = import4.createRenderElement(this.renderer,this._el_8,'div',new import4.InlineArray2(2,'class','mastfoot'),(null as any));
     this._text_53 = this.renderer.createText(this._el_52,'\n        ',(null as any));
-    this._el_54 = this.renderer.createElement(this._el_52,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_54,'class','inner follow');
+    this._el_54 = import4.createRenderElement(this.renderer,this._el_52,'div',new import4.InlineArray2(2,'class','inner follow'),(null as any));
     this._text_55 = this.renderer.createText(this._el_54,'\n          ',(null as any));
-    this._el_56 = this.renderer.createElement(this._el_54,'p',(null as any));
+    this._el_56 = import4.createRenderElement(this.renderer,this._el_54,'p',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_57 = this.renderer.createText(this._el_56,'Please give me a star on ',(null as any));
-    this._el_58 = this.renderer.createElement(this._el_56,'a',(null as any));
-    this.renderer.setElementAttribute(this._el_58,'href','https://github.com/ManuCutillas/responsive-directives-angular2');
+    this._el_58 = import4.createRenderElement(this.renderer,this._el_56,'a',new import4.InlineArray2(2,'href','https://github.com/ManuCutillas/responsive-directives-angular2'),(null as any));
     this._text_59 = this.renderer.createText(this._el_58,'Github',(null as any));
     this._text_60 = this.renderer.createText(this._el_56,', Follow me on ',(null as any));
-    this._el_61 = this.renderer.createElement(this._el_56,'a',(null as any));
-    this.renderer.setElementAttribute(this._el_61,'href','https://twitter.com/ManuCutillas');
+    this._el_61 = import4.createRenderElement(this.renderer,this._el_56,'a',new import4.InlineArray2(2,'href','https://twitter.com/ManuCutillas'),(null as any));
     this._text_62 = this.renderer.createText(this._el_61,'@ManuCutillas',(null as any));
     this._text_63 = this.renderer.createText(this._el_56,'.',(null as any));
     this._text_64 = this.renderer.createText(this._el_54,'\n        ',(null as any));
     this._text_65 = this.renderer.createText(this._el_52,'\n      ',(null as any));
     this._text_66 = this.renderer.createText(this._el_8,'\n       ',(null as any));
-    this._el_67 = this.renderer.createElement(this._el_8,'responsiveSizeInfo',(null as any));
+    this._el_67 = import4.createRenderElement(this.renderer,this._el_8,'responsiveSizeInfo',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._appEl_67 = new import3.AppElement(67,8,this,this._el_67);
     this._ResponsiveSizeInfo_67_5 = new import13.Wrapper_ResponsiveSizeInfo(this.parentInjector.get(import18.ResponsiveState),this._appEl_67.vcRef);
     this._text_68 = this.renderer.createText(this._el_8,'\n       ',(null as any));
-    this._el_69 = this.renderer.createElement(this._el_8,'deviceInfo',(null as any));
+    this._el_69 = import4.createRenderElement(this.renderer,this._el_8,'deviceInfo',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._appEl_69 = new import3.AppElement(69,8,this,this._el_69);
     this._DeviceInfo_69_5 = new import14.Wrapper_DeviceInfo(this.parentInjector.get(import18.ResponsiveState),this._appEl_69.vcRef);
     this._text_70 = this.renderer.createText(this._el_8,'\n       ',(null as any));
-    this._el_71 = this.renderer.createElement(this._el_8,'orientationInfo',(null as any));
+    this._el_71 = import4.createRenderElement(this.renderer,this._el_8,'orientationInfo',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._appEl_71 = new import3.AppElement(71,8,this,this._el_71);
     this._OrientationInfo_71_5 = new import14.Wrapper_OrientationInfo(this.parentInjector.get(import18.ResponsiveState),this._appEl_71.vcRef);
     this._text_72 = this.renderer.createText(this._el_8,'\n       ',(null as any));
-    this._el_73 = this.renderer.createElement(this._el_8,'pixelratioInfo',(null as any));
+    this._el_73 = import4.createRenderElement(this.renderer,this._el_8,'pixelratioInfo',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._appEl_73 = new import3.AppElement(73,8,this,this._el_73);
     this._PixelRatioInfo_73_5 = new import15.Wrapper_PixelRatioInfo(this.parentInjector.get(import18.ResponsiveState),this._appEl_73.vcRef);
     this._text_74 = this.renderer.createText(this._el_8,'\n       ',(null as any));
-    this._el_75 = this.renderer.createElement(this._el_8,'userAgentInfo',(null as any));
+    this._el_75 = import4.createRenderElement(this.renderer,this._el_8,'userAgentInfo',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._UserAgentInfo_75_3 = new import16.Wrapper_UserAgentInfo(this.parentInjector.get(import18.ResponsiveState));
     this._text_76 = this.renderer.createText(this._el_8,'\n    ',(null as any));
     this._text_77 = this.renderer.createText(this._el_6,'\n  ',(null as any));
     this._text_78 = this.renderer.createText(this._el_4,'\n',(null as any));
     this._text_79 = this.renderer.createText(this._el_0,'\n',(null as any));
     this._text_80 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._arr_0 = import4.pureProxy2((p0:any,p1:any):any[] => {
-      return [
-        p0,
-        p1
-      ]
-      ;
-    });
-    this._map_0 = import4.pureProxy1((p0:any):{[key: string]:any} => {
-      return {bootstrap: p0};
-    });
-    this._arr_1 = import4.pureProxy2((p0:any,p1:any):any[] => {
-      return [
-        p0,
-        p1
-      ]
-      ;
-    });
-    this._map_1 = import4.pureProxy1((p0:any):{[key: string]:any} => {
-      return {bootstrap: p0};
-    });
     const subscription_0:any = this._Responsive_44_6.context.changes.subscribe(this.eventHandler(this._handle_changes_44_0.bind(this)));
-    this._map_2 = import4.pureProxy3((p0:any,p1:any,p2:any):{[key: string]:any} => {
-      return {
-        window: p0,
-        min: p1,
-        max: p2
-      }
-      ;
-    });
-    this._map_3 = import4.pureProxy1((p0:any):{[key: string]:any} => {
-      return {sizes: p0};
-    });
     var disposable_0:Function = this.renderer.listen(this._el_67,'statechanges',this.eventHandler(this._handle_statechanges_67_0.bind(this)));
     const subscription_1:any = this._ResponsiveSizeInfo_67_5.context.statechanges.subscribe(this.eventHandler(this._handle_statechanges_67_0.bind(this)));
     var disposable_1:Function = this.renderer.listen(this._el_69,'device',this.eventHandler(this._handle_device_69_0.bind(this)));
@@ -471,24 +453,30 @@ class _View_AppComponent0 extends import1.AppView<import0.AppComponent> {
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_0:any = this._map_0(this._arr_0('xs','lg'));
-    this._Responsive_42_6.check_responsive(currVal_0,throwOnChange,false);
-    this._Responsive_42_6.detectChangesInternal(this,this._anchor_42,throwOnChange);
-    const currVal_2:any = this._map_1(this._arr_1('xs','lg'));
-    this._Responsive_44_6.check_responsive(currVal_2,throwOnChange,false);
-    this._Responsive_44_6.detectChangesInternal(this,this._anchor_44,throwOnChange);
-    const currVal_3:any = 'parent';
-    this._ResponsiveWindow_47_3.check_name(currVal_3,throwOnChange,false);
-    this._ResponsiveWindow_47_3.detectChangesInternal(this,this._el_47,throwOnChange);
-    const currVal_4:any = this._map_3(this._map_2('parent',900,1400));
-    this._Responsive_49_6.check_responsive(currVal_4,throwOnChange,false);
-    this._Responsive_49_6.detectChangesInternal(this,this._anchor_49,throwOnChange);
-    this._ResponsiveSizeInfo_67_5.detectChangesInternal(this,this._el_67,throwOnChange);
-    this._DeviceInfo_69_5.detectChangesInternal(this,this._el_69,throwOnChange);
-    this._OrientationInfo_71_5.detectChangesInternal(this,this._el_71,throwOnChange);
-    this._PixelRatioInfo_73_5.detectChangesInternal(this,this._el_73,throwOnChange);
-    this._UserAgentInfo_75_3.detectChangesInternal(this,this._el_75,throwOnChange);
+    const currVal_42_0_0:any = this._map_101(this._arr_100('xs','lg'));
+    this._Responsive_42_6.check_responsive(currVal_42_0_0,throwOnChange,false);
+    this._Responsive_42_6.detectChangesInInputProps(this,this._anchor_42,throwOnChange);
+    const currVal_44_0_0:any = this._map_103(this._arr_102('xs','lg'));
+    this._Responsive_44_6.check_responsive(currVal_44_0_0,throwOnChange,false);
+    this._Responsive_44_6.detectChangesInInputProps(this,this._anchor_44,throwOnChange);
+    const currVal_47_0_0:any = 'parent';
+    this._ResponsiveWindow_47_3.check_name(currVal_47_0_0,throwOnChange,false);
+    this._ResponsiveWindow_47_3.detectChangesInInputProps(this,this._el_47,throwOnChange);
+    const currVal_49_0_0:any = this._map_105(this._map_104('parent',900,1400));
+    this._Responsive_49_6.check_responsive(currVal_49_0_0,throwOnChange,false);
+    this._Responsive_49_6.detectChangesInInputProps(this,this._anchor_49,throwOnChange);
+    this._ResponsiveSizeInfo_67_5.detectChangesInInputProps(this,this._el_67,throwOnChange);
+    this._DeviceInfo_69_5.detectChangesInInputProps(this,this._el_69,throwOnChange);
+    this._OrientationInfo_71_5.detectChangesInInputProps(this,this._el_71,throwOnChange);
+    this._PixelRatioInfo_73_5.detectChangesInInputProps(this,this._el_73,throwOnChange);
+    this._UserAgentInfo_75_3.detectChangesInInputProps(this,this._el_75,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
+    this._ResponsiveWindow_47_3.detectChangesInHostProps(this,this._el_47,throwOnChange);
+    this._ResponsiveSizeInfo_67_5.detectChangesInHostProps(this,this._el_67,throwOnChange);
+    this._DeviceInfo_69_5.detectChangesInHostProps(this,this._el_69,throwOnChange);
+    this._OrientationInfo_71_5.detectChangesInHostProps(this,this._el_71,throwOnChange);
+    this._PixelRatioInfo_73_5.detectChangesInHostProps(this,this._el_73,throwOnChange);
+    this._UserAgentInfo_75_3.detectChangesInHostProps(this,this._el_75,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
   }
   destroyInternal():void {
@@ -504,33 +492,33 @@ class _View_AppComponent0 extends import1.AppView<import0.AppComponent> {
   }
   private _handle_changes_44_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this.context.listenchanges($event)) !== false);
-    return (true && pd_0);
+    const pd_44_0:any = ((<any>this.context.listenchanges($event)) !== false);
+    return (true && pd_44_0);
   }
   private _handle_statechanges_67_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this.context.mystates($event)) !== false);
-    return (true && pd_0);
+    const pd_67_0:any = ((<any>this.context.mystates($event)) !== false);
+    return (true && pd_67_0);
   }
   private _handle_device_69_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this.context.thisdevice($event)) !== false);
-    return (true && pd_0);
+    const pd_69_0:any = ((<any>this.context.thisdevice($event)) !== false);
+    return (true && pd_69_0);
   }
   private _handle_orientation_71_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this.context.thisorientation($event)) !== false);
-    return (true && pd_0);
+    const pd_71_0:any = ((<any>this.context.thisorientation($event)) !== false);
+    return (true && pd_71_0);
   }
   private _handle_pixelratio_73_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this.context.thispixelratio($event)) !== false);
-    return (true && pd_0);
+    const pd_73_0:any = ((<any>this.context.thispixelratio($event)) !== false);
+    return (true && pd_73_0);
   }
   private _handle_info_75_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this.context.thisUserAgent($event)) !== false);
-    return (true && pd_0);
+    const pd_75_0:any = ((<any>this.context.thisUserAgent($event)) !== false);
+    return (true && pd_75_0);
   }
 }
 export function viewFactory_AppComponent0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import3.AppElement):import1.AppView<import0.AppComponent> {
@@ -545,9 +533,8 @@ class _View_AppComponent1 extends import1.AppView<any> {
     super(_View_AppComponent1,renderType_AppComponent,import6.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
-    this._el_0 = this.renderer.createElement((null as any),'div',(null as any));
-    this._el_1 = this.renderer.createElement(this._el_0,'div',(null as any));
-    this.renderer.setElementAttribute(this._el_1,'class','lead text-inf');
+    this._el_0 = import4.createRenderElement(this.renderer,(null as any),'div',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_1 = import4.createRenderElement(this.renderer,this._el_0,'div',new import4.InlineArray2(2,'class','lead text-inf'),(null as any));
     this._text_2 = this.renderer.createText(this._el_1,'*Writing the documentation of this demo.',(null as any));
     this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,
@@ -579,9 +566,7 @@ class _View_AppComponent3 extends import1.AppView<any> {
     super(_View_AppComponent3,renderType_AppComponent,import6.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
-    this._el_0 = this.renderer.createElement((null as any),'p',(null as any));
-    this.renderer.setElementAttribute(this._el_0,'class','fill');
-    this.renderer.setElementAttribute(this._el_0,'style','color:white;font-size:20px;');
+    this._el_0 = import4.createRenderElement(this.renderer,(null as any),'p',new import4.InlineArray4(4,'class','fill','style','color:white;font-size:20px;'),(null as any));
     this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
     return (null as any);
   }
